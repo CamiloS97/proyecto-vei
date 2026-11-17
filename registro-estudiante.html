@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#128321">
+    <title>Registro de estudiante | EduMatch</title>
+    <link rel="stylesheet" href="./estilos/estilo-header.css">
+    <link rel="stylesheet" href="./estilos/estilo-registro-estudiante.css">
+</head>
+<body class="pagina-registro-estudiante">
+    <header>
+        <nav class="barra-de-navegacion">
+            <a href="./index.html">
+            <img src="./imagenes/logotipo2.svg" alt="Logotipo de EduMatch">
+            </a>
+            <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="opciones-navegacion">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="opciones-navegacion">
+                <li><a href="./index.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="./menu.js" defer></script>
+    <main class="registro-estudiante">
+        <section class="formulario-registro-estudiante" aria-labelledby="titulo-registro-estudiante">
+            <h1 id="titulo-registro-estudiante">Crear cuenta de estudiante</h1>
+            <form action="#" method="post">
+                <div class="campo-registro-estudiante">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+                <div class="campo-registro-estudiante">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required>
+                </div>
+                <div class="campo-registro-estudiante">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" autocomplete="new-password" required>
+                </div>
+                <button type="submit">Registrarme</button>
+            </form>
+            <p class="enlace-login-estudiante">¿Ya tenés una cuenta? <a href="./login.html">Iniciá sesión</a></p>
+        </section>
+    </main>
+</body>
+</html>

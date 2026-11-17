@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduMatch | Resultados de búsqueda</title>
+<link rel="stylesheet" href="./estilos/profecerca_buscador.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">EduMatch</a>
+  <nav class="nav-links" aria-label="Navegación principal">
+    <a href="#">Buscar profesores</a><a href="#">Idiomas</a><a href="#">Cómo funciona</a>
+  </nav>
+  <div class="nav-actions"><a class="btn outline" href="registro-profesor.html">Quiero dar clases</a><a class="btn primary" href="opciones-de-registro.html">Registrarme</a></div>
+</header>
+<main>
+  <section class="heading"><h1>Resultados de búsqueda</h1><p>Clases particulares · Modalidad virtual</p></section>
+  <section class="search" aria-label="Búsqueda actual">
+    <div class="field"><label>Materia o tema</label><strong>Matemática</strong></div>
+    <div class="field"><label>Modalidad</label><strong>Virtual</strong></div>
+    <button class="btn primary" type="button">Actualizar resultados</button>
+  </section>
+  <div class="layout">
+    <aside class="filters">
+      <h2>Filtros</h2>
+      <section class="group"><h3>Materia</h3><label class="option"><input type="checkbox">Matemática</label><label class="option"><input type="checkbox">Álgebra</label><label class="option"><input type="checkbox">Análisis matemático</label></section>
+      <section class="group"><h3>Carrera / nivel</h3><label class="option"><input type="checkbox">Terciario</label><label class="option"><input type="checkbox">Universitario</label></section>
+     <section class="group">
+    <h3>Precio por hora</h3>
+    <select id="priceFilter">
+        <option value="">Cualquier precio</option>
+        <option value="low">Hasta $7.500</option>
+        <option value="medium">$7.501 a $8.500</option>
+        <option value="high">Más de $8.500</option>
+    </select>
+</section>
+      <section class="group">
+    <h3>Disponibilidad</h3>
+    <select id="dayFilter">
+        <option value="">Cualquier día</option>
+        <option value="lunes">Lunes</option>
+        <option value="martes">Martes</option>
+        <option value="miercoles">Miércoles</option>
+        <option value="jueves">Jueves</option>
+        <option value="viernes">Viernes</option>
+        <option value="sabado">Sábado</option>
+        <option value="domingo">Domingo</option>
+    </select>
+</section>
+    </aside>
+    <section class="results" aria-label="Clases encontradas">
+      <div class="results-top"><h2>8 clases particulares encontradas</h2><button class="sort" type="button">Ordenar por: Relevancia ▾</button></div>
+      <article class="card" data-price="8000" data-days="lunes miercoles viernes">
+        <div class="class-image">Imagen ilustrativa<br>de la clase</div>
+        <div class="info"><span class="tag">CLASE PARTICULAR · VIRTUAL</span><h3>Clases de Matemática universitaria</h3><p class="teacher">Profesor/a: <strong>Lucía Fernández</strong></p><p class="description">Apoyo universitario · Preparación de parciales</p><p class="meta">Virtual · Horarios a coordinar</p></div>
+        <div class="side"><span class="rating">★ 4,8</span><div class="price">ARS 8.000<small>por hora</small></div><a class="btn primary" href="#">Ver clase</a></div>
+      </article>
+      <article class="card" data-price="7500" data-days="martes jueves">
+        <div class="class-image">Imagen ilustrativa<br>de la clase</div>
+        <div class="info"><span class="tag">CLASE PARTICULAR · VIRTUAL</span><h3>Álgebra y análisis matemático</h3><p class="teacher">Profesor/a: <strong>Martín Rodríguez</strong></p><p class="description">Clases para nivel universitario · Material de apoyo</p><p class="meta">Virtual · Disponibilidad semanal</p></div>
+        <div class="side"><span class="rating">★ 4,8</span><div class="price">ARS 7.500<small>por hora</small></div><a class="btn primary" href="#">Ver clase</a></div>
+      </article>
+      <article class="card" data-price="9000" data-days="lunes viernes">
+        <div class="class-image">Imagen ilustrativa<br>de la clase</div>
+        <div class="info"><span class="tag">CLASE PARTICULAR · VIRTUAL</span><h3>Matemática desde cero</h3><p class="teacher">Profesor/a: <strong>Camila López</strong></p><p class="description">Explicaciones y ejercicios personalizados</p><p class="meta">Virtual · Clases individuales</p></div>
+        <div class="side"><span class="rating">★ 4,8</span><div class="price">ARS 9.000<small>por hora</small></div><a class="btn primary" href="#">Ver clase</a></div>
+      </article>
+      <div class="pagination"><button class="page active">1</button><button class="page">2</button><button class="page">3</button><button class="page next">Siguiente</button></div>
+      <p class="help">¿No encontrás lo que buscás? Modificá los filtros o ampliá tu búsqueda.</p>
+    </section>
+  </div>
+</main>
+<script src="buscador.js"></script>
+</body>
+</html>

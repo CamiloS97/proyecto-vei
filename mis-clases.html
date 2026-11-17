@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Mis clases | EduMatch</title>
+    <link rel="stylesheet" href="estilos/mis-clases.css">
+</head>
+<body>
+   
+    <header class="encabezado">
+        <a href="./index.html" aria-label="EduMatch, inicio">
+            <img src="imagenes/logotipo2.svg" alt="Logotipo de EduMatch" width="200">
+            </a>
+        <nav class="navegador">
+            <a href="#">Buscar profesores</a>
+            <a href="#">Idiomas</a>
+            <a href="#">Cómo funciona</a>
+        </nav>
+        <button class="usuario"><span class="avatar" >CS</span>Camilo</button>
+    </header>
+    
+    <div class="layout">
+        <aside class="sidebar">
+            <h1 class="titulo">Mi cuenta</h1>
+            <a href="#" class="sb-activa" id="btn-clases">Mis clases</a>
+            <a href="#" class="sb-inactiva" id="btn-calendario">Calendario</a>
+            <a href="#" class="sb-inactiva" id="btn-msj">Mensajes</a>
+        </aside>
+        <main class="mis-clases">
+            <h1 class="titulo">Mis Clases</h1>
+            <p>Todo lo que estás aprendiendo, en un solo lugar.</p>
+            <div class="proxima">
+                <div class="fecha">
+                    <h4>HOY</h4>
+                    <h1>16</h1>
+                    <h4>NOV</h4>
+                </div>
+                <div class="proxima-datos">
+                    <h4>Tu proxima clase comienza en 2 hs.</h4>
+                    <h2>Matematica universitaria</h2>
+                    <div class="proxima-hora">
+                        <h4>18:30 - 19:30</h4>
+                        <h4>Prof. Ana Lopez</h4>
+                    </div>
+                </div>
+                <button id="boton-prox">Ir a clase</button>
+            </div>
+            <hr>
+
+            <div class="clase" id="clase-uno">
+                <h2 class="clase-nombre">Matematica universitaria</h2>
+                <div class="clase-profesor">
+                    <img class="foto-profe"src="imagenes/profesora.png" alt="">
+                    <div class="datos-profe">
+                        <h3>Tu profesor</h3>
+                        <p>Ana Lopez</p>
+                    </div>
+                </div>
+                <p>Martes 18:30</p>
+                <hr>
+                <div class="clase-fondo">
+                    <div class="progreso">
+                        <p>Progreso 7/12</p>
+                        <progress id="progeso" max="12" value="7"></progress>
+                    </div>
+                    <button id="boton-ir">Ir a clase</button>
+                    
+                </div>
+                
+            </div>
+             <div class="clase" id="clase-dos">
+                <h2 class="clase-nombre">Bases de datos</h2>
+                <div class="clase-profesor">
+                    <img class="foto-profe"src="imagenes/profesor-dos.png" alt="">
+                    <div class="datos-profe">
+                        <h3>Tu profesor</h3>
+                        <p>Carlos Garcia</p>
+                    </div>
+                </div>
+                <p>Martes 18:30</p>
+                <hr>
+                <div class="clase-fondo">
+                    <div class="progreso">
+                        <p>Progreso 5/20</p>
+                        <progress id="progeso" max=20" value="5"></progress>
+                    </div>
+                    <button id="boton-ir">Ir a clase</button>
+                    
+                </div>
+                
+            </div>
+
+        
+        </main>
+        <main class="calendario">
+            <div class="calendar-container">
+                <div class="calendar-header">Noviembre 2026</div>
+                <div class="calendar-grid">
+                    <div class="day-name">Dom</div>
+                    <div class="day-name">Lun</div>
+                    <div class="day-name">Mar</div>
+                    <div class="day-name">Mié</div>
+                    <div class="day-name">Jue</div>
+                    <div class="day-name">Vie</div>
+                    <div class="day-name">Sáb</div>
+                    
+
+                    
+                    
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    
+                </div>
+            </div>
+        </main>
+
+    </div>
+    
+    
+    <script src="mis-clases.js"></script>
+</body>
+</html>

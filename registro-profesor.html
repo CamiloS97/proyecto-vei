@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registrate como profesor en EduMatch y compartí tus conocimientos.">
+  <title>EduMatch | Registro de profesor</title>
+  <link rel="stylesheet" href="./estilos/registro-profesor.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="./index.html" aria-label="EduMatch, inicio">EduMatch</a>
+    <a class="back-button" href="./index.html">Volver</a>
+  </header>
+
+  <main class="page">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <div class="eyebrow">
+          <span class="eyebrow-icon" aria-hidden="true">✦</span>
+          Sumate a nuestra comunidad
+        </div>
+
+        <h1 id="intro-title">Convertí tu conocimiento en una oportunidad</h1>
+        <p class="intro-description">
+          Registrate como profesor en EduMatch y comenzá a compartir lo que sabés
+          con estudiantes que buscan aprender.
+        </p>
+
+        <ul class="benefits">
+          <li><span class="benefit-icon" aria-hidden="true">✓</span> Llegá a más estudiantes</li>
+          <li><span class="benefit-icon" aria-hidden="true">✓</span> Organizá tus clases fácilmente</li>
+          <li><span class="benefit-icon" aria-hidden="true">✓</span> Gestioná tus horarios</li>
+        </ul>
+      </div>
+
+      <div class="photo-collage" aria-label="Profesores y estudiantes aprendiendo">
+        <!-- Reemplazá estas rutas por las imágenes que elijas. -->
+        <img class="photo photo-teacher" src="img/profesor-explicando.jpg"
+             alt="Profesor explicando un tema frente a una pizarra">
+        <img class="photo photo-student" src="img/estudiante-online.jpg"
+             alt="Estudiante tomando una clase virtual">
+        <img class="photo photo-tutor" src="img/tutoria-personalizada.jpg"
+             alt="Tutor ayudando a un estudiante">
+        <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+        <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <section class="form-card" aria-labelledby="form-title">
+      <div class="form-heading">
+        <div class="form-heading-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <circle cx="18" cy="13" r="8"></circle>
+            <path d="M4 39c0-8 6-13 14-13 4 0 7 1 9 3"></path>
+            <circle cx="36" cy="34" r="9"></circle>
+            <path d="M36 29v10M31 34h10"></path>
+          </svg>
+        </div>
+        <h2 id="form-title">Crear cuenta de profesor</h2>
+      </div>
+
+      <form id="teacherForm">
+        <div class="form-field">
+          <label for="name">Nombre</label>
+          <div class="input-wrap">
+            <span class="input-icon" aria-hidden="true">♙</span>
+            <input id="name" name="name" type="text" placeholder="Ingresá tu nombre"
+                   autocomplete="name" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Correo electrónico</label>
+          <div class="input-wrap">
+            <span class="input-icon" aria-hidden="true">✉</span>
+            <input id="email" name="email" type="email" placeholder="tu@email.com"
+                   autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Teléfono</label>
+          <div class="input-wrap">
+            <span class="input-icon" aria-hidden="true">⌕</span>
+            <input id="phone" name="phone" type="tel" placeholder="Ingresá tu teléfono"
+                   autocomplete="tel" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="password">Contraseña</label>
+          <div class="input-wrap">
+            <span class="input-icon" aria-hidden="true">▣</span>
+            <input id="password" name="password" type="password"
+                   placeholder="Creá una contraseña" autocomplete="new-password"
+                   minlength="8" required>
+            <button class="password-toggle" type="button" id="togglePassword"
+                    aria-label="Mostrar contraseña" aria-pressed="false">◉</button>
+          </div>
+          <small class="field-hint">Debe tener al menos 8 caracteres.</small>
+        </div>
+
+        <button class="submit-button" type="submit">Crear cuenta</button>
+        <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="form-footer">
+        <span>¿Ya tenés una cuenta?</span>
+        <a href="../login/login.html">Iniciá sesión</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="registro-profesor.js"></script>
+</body>
+</html>

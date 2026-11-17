@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#128321">
+    <title>EduMatch</title>
+    <link rel="stylesheet" href="./estilos/estilo-header.css">
+    <link rel="stylesheet" href="./estilos/estilo-index.css">
+</head>
+<body>
+    <header>
+        <nav class="barra-de-navegacion">
+            <a href="#">
+            <img src="./imagenes/logotipo2.svg" alt="logotipo de EduMatch">
+            </a>
+            <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="opciones-navegacion">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="opciones-navegacion">
+                <li><a href="./registro-profesor.html">Quiero dar clases</a></li>
+                <li><a href="./login.html">Tu cuenta</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <script src="./menu.js" defer></script>
+    <main>
+        <section class="hero">
+            <div class="hero-contenido">
+                <h1>Encuentra al profe indicado para vos</h1>
+                <form class="hero-buscador" role="search">
+                    <input type="search" name="busqueda" placeholder="Materia o profesor" aria-label="Materia o profesor">
+                    <button><a href="profecerca_buscador_azul.html">Buscar</a></button>
+                </form>
+            </div>
+            <img src="./imagenes/img_temporal.jpg" alt="Estudiante participando en una clase virtual">
+        </section>
+
+        <section class="como-funciona" aria-label="Cómo funciona EduMatch">
+            <article class="paso-como-funciona">
+                <div class="icono-paso" aria-hidden="true">
+                    <img src="./imagenes/search_7022134.png" alt="">
+                </div>
+                <div class="texto-paso">
+                    <h2>Explorá y contactá profesores</h2>
+                    <p>Buscá entre distintos perfiles y encontrá docentes para la materia que necesitás.</p>
+                </div>
+            </article>
+            <article class="paso-como-funciona">
+                <div class="icono-paso" aria-hidden="true">
+                    <img src="./imagenes/choice_5360864.png" alt="">
+                </div>
+                <div class="texto-paso">
+                    <h2>Elegí la clase ideal para vos</h2>
+                    <p>Compará opciones según tus objetivos, horarios y modalidad preferida.</p>
+                </div>
+            </article>
+            <article class="paso-como-funciona">
+                <div class="icono-paso" aria-hidden="true">
+                    <img src="./imagenes/learning_6746941.png" alt="">
+                </div>
+                <div class="texto-paso">
+                    <h2>Aprendé a tu propio ritmo</h2>
+                    <p>Coordiná tus clases y avanzá con una enseñanza personalizada.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="garantia">
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
